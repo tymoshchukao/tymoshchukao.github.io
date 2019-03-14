@@ -1,0 +1,269 @@
+
+.products{
+    height: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    max-width: 760px;
+    display: inline-block;
+}
+.products .all-products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 6px;
+}
+.products h1{
+    color: #635F57;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: inherit;
+}
+.products .products-item{
+    position: relative;
+    min-height: 320px;
+    min-width: 233px;
+    border: 1px solid #EEEEEE;
+    margin-bottom: 25px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+.products .products-item .photo{
+    width: 215px;
+    height: 229px;
+    background-color: #EFF1F0;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.products .sticker-new{
+height: 150px;
+width: 150px;
+z-index: 1;
+position: absolute;
+overflow: hidden;
+text-align: right;
+right: -4px;
+ top: -5px;
+}
+.products .sticker-new span{
+font-size: 16px;
+font-weight: 500;
+color: #ffffff;
+text-transform: uppercase;
+text-align: center;
+line-height: 36px;
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+width: 138px;
+display: block;
+background: #00B3CC;
+border-bottom: 1px solid #36A2BD;
+position: absolute;
+top: 18px;
+right: -34px;
+}
+.products .sticker-new span::before{
+content: "";
+position: absolute;
+left: 0px;
+top: 100%;
+z-index: -1;
+border-left: 3px solid #36A2BD;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #36A2BD;
+}
+.products .sticker-new span::after{
+    content: "";
+    position: absolute; right: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #36A2BD;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #36A2BD;
+}
+.products .sticker-sale{
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    text-align: left;
+    left: -4px;
+     top: -5px;
+}
+.products .sticker-sale span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 36px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 138px;
+    display: block;
+    background: #7CB022;
+    border-bottom: 1px solid #779F31;
+    position: absolute;
+    top: 18px;
+    right: 45px;
+}
+.products .sticker-sale span::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #779F31;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid #779F31;
+}
+.products .sticker-sale span::after{
+        content: "";
+        position: absolute; right: 0px; top: 100%;
+        z-index: -1;
+        border-left: 3px solid transparent;
+        border-right: 3px solid #779F31;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid #779F31;
+}
+.products .products-item .photo img{
+    margin-top: 65px;
+}
+.main-wind .products-item .item{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.main-wind .products-item a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #625E63;
+    font-family: inherit;
+}
+.main-wind .products-item .prod-cost{
+    color: #7db122;
+    font-size: 18px;
+}
+.main-wind .products-item .discount{
+    text-decoration: line-through;
+    color: #464148;
+    font-size: 14px;
+    font-family: inherit;
+}
+.main-wind .products-item button{
+    width: 47px;
+    height: 47px;
+    background-image: url('../img/png/sprite.png');
+    background-position: -125px -8px;
+    float: right;
+    margin-right: 10px;
+    margin-top: -45px;
+}
+.main-wind .featured-aside{
+    height: 486px;
+    width: 233px;
+    border-top: 2px solid #4CB1CA;
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+.aside-slider{
+    height: 335px;
+    width: 208px;  
+    margin-top: 18px;
+    margin-left: 12px; 
+}
+.featured-aside .check{
+    width: 132px;
+    height: 44px;
+    z-index: 1;
+    background-color: #4CB1CA;;
+    position: absolute;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: inherit;
+    margin-top: 286px;
+    margin-left: 50px;
+}
+.featured-aside .check button:hover{
+background-color: #464148;
+}
+.dots{
+  width:233px;
+  height:40px;
+  margin-top: 10px;
+  box-shadow:0 0 4px rgba(0, 0, 0, 0.1);
+}
+.featured-aside .slick-dots{
+    margin-left: 68px;
+    margin-top: 24px;
+}
+.featured-aside .slick-dots li {  
+    position: relative;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-left:8px;
+}
+.slick-dots li button{
+    width: inherit;
+    height: inherit;
+    color: transparent; 
+}
+.slick-dots li button:before{
+    content: "";
+    width: inherit;
+    height: inherit;
+    background-color: #5EB300;
+    border-radius: 50%;
+    position: absolute;
+}
+.slick-dots li.slick-active button:before {
+    content: "";
+    background-color: #00B3CC;
+}
+.main-wind .newsletters{
+    height: 280px;
+    width: 233px;
+    border-top: 2px solid #4CB1CA;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    margin-top: 30px;
+}
+.main-wind .aside-name{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #635f57;
+    text-align: center;
+    margin-top: 16px;
+}
+.main-wind .text{
+    color: #696969;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: inherit;
+}
+aside .aside-search{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+aside .aside-search input{
+    height: 28px;
+    width: 184px;
+}
+aside .aside-search button{
+    height: 43px;
+    width: 111px;
+    background-color: #7EB123;
+    margin-top: 18px;
+    margin-left: 35px;
+    color: white;
+    font-size: 14px;
+font-family: inherit;
+}
+aside .aside-search button:hover { 
+    background: #608919; 
+}
+
+

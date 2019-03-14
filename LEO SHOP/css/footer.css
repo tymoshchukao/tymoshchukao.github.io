@@ -1,0 +1,214 @@
+footer{
+    margin-top: 75px
+}
+footer .top-footer{
+    background-color: #4CB1CA;
+    min-height: 105px;
+}
+footer .middle-footer{
+    background-color: #39A0B9;
+    min-height: 335px;
+}
+footer .bottom-footer{
+    background-color: #0B4B5A;
+    min-height: 61px;
+}
+footer .free-ship{
+    width: 470px;
+    display: inline-block;
+}
+footer .call-us{
+width: 437px;
+float: right;
+margin-right: 0%;
+}
+footer .free-ship button{
+    width: 65px;
+    height: 65px;
+    background-image: url('../img/png/sprite.png');
+    background-position: -182px -76px;
+    margin-top: 19px;
+}
+footer .ship-call-text{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 21px;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin-top: 39px;
+    margin-left: 15px;
+}
+footer .call-us button{
+    width: 65px;
+    height: 65px;
+    background-image: url('../img/png/sprite.png');
+    background-position: -182px -8px;
+    margin-top: 19px;
+}
+.middle-footer .grid-parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+    grid-column-gap: 25px;
+    padding-top: 44px;
+}
+.middle-footer h2{
+    font-family: inherit;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 500;
+}
+.middle-footer span{
+    font-family: inherit;
+    font-size: 13px;
+    color: #ffffff;
+}
+.middle-footer .like{
+    width: 47px;
+    height: 23px;
+    background-image: url('../img/png/sprite.png');
+    background-position: -9px -48px;
+    margin-top: 0;
+}
+.middle-footer .facebook-photos{
+    border-bottom: 1px solid #4BB0C9;
+    border-top:  1px solid #4BB0C9;
+width: 230px;
+}
+.middle-footer .facebook-photos button{
+    width: 50px;
+    height: 49px;
+    background-image: url('../img/png/sprite.png');
+    background-position: -118px -61px;
+    margin-right: 4px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.middle-footer .from-twitter{
+    margin-top: -15px;
+}
+.grid-parent div:nth-child(2) button{
+    width: 43px;
+    height: 43px;
+    background-image: url('../img/png/sprite.png');
+    background-position: -62px -48px;
+    margin-top: 0;
+}
+.middle-footer .twitter-text{
+    display: inline-block;
+    width: 170px;
+    vertical-align: top;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+.middle-footer p{
+    font-size: 13px;
+    font-family: inherit;
+    font-weight: 500;
+    color: #ffffff;
+    padding-top: 0;
+    line-height: 1.7;
+} 
+.middle-footer p a{
+    color: #8BD7EA;
+}
+.middle-footer .information{
+    margin-top: -15px;
+    margin-left: -8px;
+}
+.middle-footer .information a{
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 10px;
+    line-height: 1.9;
+}
+.middle-footer .information a::before{
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-bottom: 1.5px solid #ffffff;
+    border-right: 1.5px solid #ffffff;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    position: relative;
+    top: -1px;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.middle-footer .contact-info{
+    margin-top: 23px;
+}
+.middle-footer .contact-info p{
+    line-height: 2;
+}
+.middle-footer .soc-web-logos{
+    border-top: 1px solid #4BB0C9;
+    width: 195px;
+}
+.middle-footer .soc-web-logos button:nth-child(1){
+    width: 36px;
+    height: 36px;
+    background-image: url('../img/png/sprite.png');
+    background-position: -100px -123px;
+    margin-top: 19px;
+    margin-right: 6px;
+}
+.middle-footer .soc-web-logos button:nth-child(2){
+    width: 36px;
+    height: 36px;
+    background-image: url('../img/png/sprite.png');
+    background-position: -53px -123px;
+    margin-top: 0;
+    margin-right: 6px;
+}
+.middle-footer .soc-web-logos button:nth-child(3){
+    width: 36px;
+    height: 36px;
+    background-image: url('../img/png/sprite.png');
+    background-position: -7px -81px;
+    margin-top: 0;
+    margin-right: 6px;
+}
+.middle-footer .soc-web-logos button:nth-child(4){
+    width: 36px;
+    height: 36px;
+    background-image: url('../img/png/sprite.png');
+    background-position: -7px -123px;
+    margin-top: 0;
+}
+.bottom-footer .content{
+padding-top: 16px;
+}
+footer .bottom-footer span{
+    font-family: inherit;
+    font-size: 13px;
+    color: #8adcf0;
+}
+footer .footer-menu{
+    float: right;
+    font-size: 13px;
+    color: #8adcf0;
+    padding-top: 7px;
+}
+footer .footer-menu li{
+    display: inline-block;
+    vertical-align: top;
+    border-right: 1px solid #8adcf0;
+    padding-right: 15px;
+    margin-right: 12px;
+    line-height: 11px;
+    text-transform: capitalize;
+}
+footer .footer-menu li:nth-last-child(1){
+    border-right: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+footer .footer-menu li a{
+    color: inherit;
+}
