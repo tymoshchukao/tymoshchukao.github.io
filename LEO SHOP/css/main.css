@@ -3,6 +3,7 @@
 @import 'main-slider.css';
 @import 'products.css';
 @import 'footer.css';
+@import 'resp/slider-resp.css';
 *{
     box-sizing: border-box;
 }
