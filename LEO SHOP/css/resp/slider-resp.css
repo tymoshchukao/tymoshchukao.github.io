@@ -54,10 +54,6 @@
     footer .call-us{
         width: auto;
     }
-    footer .free-ship button,
-    footer .call-us button{
-        display: none;
-    }
     footer .ship-call-text{
         font-size: 15px;
     }
