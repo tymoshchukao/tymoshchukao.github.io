@@ -45,6 +45,16 @@
         display: none;
     }
     .products .all-products{
-        margin-left: 25%;
+        margin-left: 20px;
+    }
+    header nav{
+        padding-left: 0;
+    }
+    footer .free-ship,
+    footer .call-us{
+        width: auto;
+    }
+    footer .ship-call-text{
+        font-size: 16px;
     }
 }
