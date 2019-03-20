@@ -60,5 +60,6 @@
     }
     footer .ship-call-text{
         font-size: 15px;
+        margin-top: 0;
     }
 }
