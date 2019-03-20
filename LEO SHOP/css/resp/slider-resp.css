@@ -52,10 +52,9 @@
     }
     footer .free-ship,
     footer .call-us{
-        width: 300px;
+        width: auto;
     }
     footer .ship-call-text{
         font-size: 15px;
-        margin-left: 20%;
     }
 }
