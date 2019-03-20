@@ -45,7 +45,7 @@
         display: none;
     }
     .products .all-products{
-        margin-left: 30px;
+        margin-left: 62px;
     }
     header nav{
         padding-left: 0;
@@ -53,6 +53,10 @@
     footer .free-ship,
     footer .call-us{
         width: auto;
+    }
+    footer .free-ship button,
+    footer .call-us button{
+        display: none;
     }
     footer .ship-call-text{
         font-size: 15px;
