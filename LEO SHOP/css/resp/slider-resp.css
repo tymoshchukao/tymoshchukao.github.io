@@ -44,9 +44,9 @@
     .main-slider{
         display: none;
     }
-    .products .all-products{
+    /* .products .all-products{
         margin-left: 20px;
-    }
+    } */
     header nav{
         padding-left: 0;
     }
@@ -56,5 +56,6 @@
     }
     footer .ship-call-text{
         font-size: 16px;
+        margin-left: 20%;
     }
 }
