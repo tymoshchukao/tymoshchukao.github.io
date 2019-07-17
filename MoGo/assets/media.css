@@ -1,0 +1,41 @@
+@media all and (max-width:765px){
+    .intro-title{
+        font-size: 68px;
+    }
+    .intro-subtitle{
+        font-size: 40px;
+    }
+}
+@media all and (max-width:415px){
+    .nav{
+        font-size: 13px;
+    }
+    .nav a{
+        margin: 0 4px;
+    }
+    .intro-title::after{
+        margin: 34px auto;
+    }
+    .slider_item {
+        font-size: 12px;
+    }
+    .slider_num {
+        font-size: 17px;
+    }
+
+}
+@media all and (max-width:380px){
+    .nav{
+        font-size: 13px;
+    }
+    .nav a{
+        margin: 0 1px;
+    }
+    .slider_item {
+        font-size: 10px;
+    }
+    .slider_num {
+        font-size: 15px;
+    }
+
+}
