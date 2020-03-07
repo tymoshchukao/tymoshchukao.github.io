@@ -1,0 +1,51 @@
+header{
+    font-family: 'Geometria', Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    margin: 0;
+}
+.header_bg{
+    background: url("../images/intro2.jpg") no-repeat center;
+    justify-content: center;
+    width: 100%;
+    height: 760px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 166px;
+    filter: brightness(2);
+}
+.nav a{
+    color: aliceblue;
+    transition: color .1s linear;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+.nav a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+.right-header{
+    width: 100%;
+    text-align: right;
+    margin-top: 190px;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    padding-top: 10px;
+    padding-right: 20px;
+    font-size: 45px;
+}

@@ -1,0 +1,56 @@
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.social-share{
+    left: 0;
+    position: fixed;
+    top: 25vh;
+    z-index: 205;
+}
+.social-share a{
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 50px;
+    opacity: 0.8;
+}
+.social-share a:hover{
+    filter: brightness(0);
+}
+.social-share img{
+    vertical-align: middle;
+    border-style: none;
+    height: 50px;
+}
+main{
+    max-width: 100%;
+    font-family: 'Geometria', Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;        
+    font-weight: 400;
+}
+.container{
+    max-width: 1217px;
+    margin: 0 auto;
+    padding-top: 50px; 
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
