@@ -5,8 +5,11 @@
     .intro-subtitle{
         font-size: 40px;
     }
-}
+   }
 @media all and (max-width:415px){
+    header{
+        height: 80vh;
+    }
     .nav{
         font-size: 13px;
     }
@@ -22,14 +25,13 @@
     .slider_num {
         font-size: 17px;
     }
-
+    .intro-subtitle{
+        padding-top: 0;
+    }
 }
-@media all and (max-width:380px){
+@media all and (max-width:400px){
     .nav{
         font-size: 13px;
-    }
-    .nav a{
-        margin: 0 1px;
     }
     .slider_item {
         font-size: 10px;
@@ -37,5 +39,9 @@
     .slider_num {
         font-size: 15px;
     }
-
 }
+@media all and (max-width:380px){
+    .nav a{
+        margin: 0 1px;
+    }
+ }
