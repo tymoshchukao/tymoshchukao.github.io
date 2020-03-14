@@ -1,0 +1,104 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    min-height: 288px;
+  }
+
+  .slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+    max-width: 4800px;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider__control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+  }
+
+  .slider__control_show {
+    display: flex;
+  }
+
+  .slider__control:hover,
+  .slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+  }
+
+  .slider__control_left {
+    left: 0;
+  }
+
+  .slider__control_right {
+    right: 0;
+  }
+
+  .slider__control::before {
+    display: inline-block;
+    background: transparent no-repeat center center; 
+  }
+
+  .slider__control_left::before {
+      content: '';
+    background-image: url(../images/ikons.png);
+    width: 25px;
+    height: 25px;
+    background-position: -290px -121px;
+    transform: rotate(90deg);
+  }
+
+  .slider__control_right::before {
+    content: '';
+    background-image: url(../images/ikons.png);
+    width: 25px;
+    height: 25px;
+    background-position: -290px -150px;
+    transform: rotate(90deg);
+  }
+.comment-1  .slider__item #quote-img{
+content: '';
+    background-image: url(../images/ikons.png);
+    width: 150px;
+    height: 150px;
+    background-position: -754px -1020px;
+    border: 2px solid #95E1D3;
+  }
+  .slider__item q{
+      line-height: 36px;
+      font-family: Roboto, sans-serif;
+      font-size: 24px;
+      color: #999999;
+  }
+.slider__item #quote-text{
+    max-width: 797px;
+    margin-left: 60px;
+}
+.slider__item p:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 65px;
+    height: 2.5px;
+    background-color: #F38181;
+    border: solid #f8f8f8;
+	border-width: 0 3px;
+}

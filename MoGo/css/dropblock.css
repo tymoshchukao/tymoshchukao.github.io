@@ -1,0 +1,132 @@
+
+.half {
+
+    padding: 0 1em;
+  }
+  /* Acordeon styles */
+  .tab {
+    position: relative;
+    width: 100%;
+    color: #999999;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 8px;
+    min-height: 58px;
+  }
+  .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab label {
+    position: relative;
+    display: flex;
+    padding: 0 0 0 1em;
+    line-height: 35px;
+    cursor: pointer;
+    color: black;
+    font-family: 'Montserrat', regular;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 9px;
+  }
+  /* .blue label {
+    background: #2980b9;
+  } */
+  .tab-content {
+    max-height: 0;
+    overflow: hidden;
+    /* background: #1abc9c; */
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+    overflow-y: scroll;
+  }
+  .tab-content::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+ .tab-content ::-webkit-scrollbar-track {
+    background: #f5f5f5; 
+  }
+   
+  /* Handle */
+  .tab-content::-webkit-scrollbar-thumb {
+    background: #95e1d3; 
+  }
+  /* .blue .tab-content {
+    background: #3498db;
+  } */
+  .tab-content p {
+    margin: 1em;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 24px;
+    color: #bdbdbd;
+  }
+  /* :checked */
+  .tab input:checked ~ .tab-content {
+    max-height: 194px;
+  }
+  
+  /* Icon */
+  .tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+  }
+  .tab input[type=checkbox] + label::after {
+    content: "";
+    background-image: url(../images/ikons.png);
+    width: 25px;
+    height: 25px;
+    background-position: -290px -121px;
+    margin-top: 12px;
+    margin-right: 10px;
+  }
+
+  .tab input[type=checkbox]:checked + label::after {
+    /* transform: rotate(180deg); */
+    content: "";
+    background-image: url(../images/ikons.png);
+    width: 25px;
+    height: 25px;
+    background-position: -290px -150px;
+    margin-top: 12px;
+    margin-right: 10px;
+  }
+
+  .tab #label-photo-1{
+      content: '';
+      background-image: url(../images/ikons.png);
+      width: 40px;
+      height: 40px;
+      background-position: -4px -97px;
+      margin-right: 10px;
+}
+  .tab #label-photo-2{
+      content: '';
+      background-image: url(../images/ikons.png);
+      width: 40px;
+      height: 40px;
+      background-position: -49px -97px;
+      margin-right: 10px;
+}
+  .tab #label-photo-3{
+      content: '';
+      background-image: url(../images/ikons.png);
+      width: 40px;
+      height: 40px;
+      background-position: -96px -97px;
+      margin-right: 10px;
+}
