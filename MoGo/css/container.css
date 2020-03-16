@@ -11,14 +11,52 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 100px;
+    
 }
-.about-us-photos img:hover{
- margin-left:-11px;
- margin-top:-11px;
- -webkit-box-shadow: 11px 11px 0 0 #95E1D3 ;
- box-shadow: 11px 11px 0 0 #95E1D3;
- content: '';
- background-image: url();
+.about-us img{
+    width: 390px;
+    height: 260px;
+}
+.gradient {
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+}
+.gradient:after {
+	content: "";
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.gradient:before {
+	content: "";
+	opacity: 0;    
+	transition: opacity 0.5s;
+}
+.gradient:hover:before {
+	display: inline-block;
+    width: 140px;
+    height: 70px;
+	margin: -30px 0 0 -57px; 
+	position: absolute;
+	top: 50%;
+	left: 50%;    
+	z-index: 100;    
+    background: url(../images/ikons.png) 0 0 no-repeat;
+    background-position: -776px -84px;
+	opacity: 1;
+}
+.gradient:hover:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to bottom, #ef8b8a, #eed687);    
+	opacity: 0.8;    
 }
 .green-info{
    height: 270px;
@@ -133,54 +171,101 @@ overflow: hidden;
     background-color: #f8f8f8;
     margin-top: 118px;
 }
-.our-team-photo{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 95px;
-}
-.our-team-photo img{
-    max-height: 470px;
-    max-width: 380px;
-}
-.our-team-photo img:hover{
-    margin-left:-11px;
-    margin-top:-11px;
-    -webkit-box-shadow: 11px 11px 0 0 #95E1D3 ;
-    box-shadow: 11px 11px 0 0 #95E1D3;
-    content: '';
-    background-image: url(../images/matthewgrad.png);
-}
-/* .our-team-photo #matthew:hover{
-    background-image: url(../images/matthewgrad.png);
-}
-.our-team-photo img:nth-child(2):hover{
-    background-image: url(../images/christophergrad.png);
-}
-.our-team-photo img:nth-child(3):hover{
-    background-image: url(../images/michaelgrad.png);
-} */ 
-.our-team .our-team-member{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 17px;
+
+
+.our-team .grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
     text-align: center;
-} 
-.our-team .our-team-member p{
+    margin-top: 66px;
+}
+.our-team .grid li{
+    display: inline-block;
+    width: 378px;
+    height: 453px;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+.cs-style-3 figure{
+    overflow: hidden;
+}
+.grid figure{
+    margin: 0;
+    position: relative;
+}
+.cs-style-3 figure img {
+    transition: transform 0.4s;
+}
+.grid figure img{
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+.cs-style-3 figcaption{
+    height: 100px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+}
+.grid figcaption{
+    position: absolute;
+    left: 0;
+    padding: 13px;
+    background: #95e1d3;
+    color: #ffffff;
+}
+.grid figcaption p{
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', regular;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     display: flex;
-    color: black;
-}  
-.our-team .our-team-member, .people-say i{
+    color: #ffffff;
+}
+.grid figcaption span{
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 200;
-    line-height: 29px;
-}  
+}
+.cs-style-3 figcaption div{
+    position: absolute;
+    right: -2px;
+    bottom: -6px;
+}
+.grid figcaption div{
+    text-align: center;
+    display: inline-block;
+}
+.cs-style-3 figcaption div button{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/ikons.png);
+}
+.cs-style-3 figcaption div button:hover{
+    background-color: #ef8b8a;
+    background-blend-mode: color-dodge;
+}
+.cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img{
+    transform: translateY(-50px);
+ }
+.cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption{
+      opacity: 1;
+      transform: translateY(0px);
+      transition: transform 0.4s, opacity 0.1s;
+  }
+
+
+
 .brands{
     min-height: 250px;
     background-color: #F5F5F5;
@@ -246,7 +331,7 @@ overflow: hidden;
     display: flex;
     margin-bottom: 66px;
 }
-.people-say #bold_text, .latest-blog #bold_text{
+ #bold_text{
     font-family: 'Montserrat', regular;
     font-size: 16px;
     font-weight: 600;
@@ -254,7 +339,7 @@ overflow: hidden;
     color: black;
     line-height: 33px;
 }
-.people-say #light_text, .latest-blog  #light_text{
+ #light_text{
     font-family: Roboto, sans-serif;
     color: #999999;
     font-size: 15px;
@@ -304,7 +389,7 @@ overflow: hidden;
     overflow: hidden;
     margin-top: 100px;
 }
-.blog-item a, button{
+.blog-item a, .blog-item button{
     text-decoration: none;
     line-height: 50px;
     font-family: Roboto, sans-serif;
@@ -355,4 +440,29 @@ h5::before{
     background-position: -281px -22px;
     margin-left: 49%;
     margin-bottom: 8px;
+}
+.latest-blog #sticker{
+    position: absolute;
+    display: block;
+    background-color: #95E1D3;
+    width: 60px;
+    height: 70px;
+    margin-top: -84px;
+    margin-left: -10px;
+}
+.latest-blog #data{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-top: 7px;
+    color: #ffffff;
+    text-align: center;
+}
+.latest-blog #jan{
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    font-style: italic;
+    text-align: center;
 }

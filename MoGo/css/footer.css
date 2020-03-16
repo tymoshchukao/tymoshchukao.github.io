@@ -1,0 +1,176 @@
+footer{
+    background-color: #f8f8f8;
+    min-height: 560px;
+}
+.footer-wrapper{
+    padding-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer .logo-footer{
+    font-size: 45px;
+    font-weight: 700;
+    color: #cccccc;
+    font-family: 'Montserrat', sans-serif;
+}
+footer #footer-text{
+    font-family: Roboto, sans-serif;
+    color: #999999;
+    font-size: 15px;
+    margin-top: 30px;
+}
+footer #followers{
+    font-size: 15px;
+    font-weight: 300;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 45px;
+}
+footer .letter{
+    font-size: 19px;
+    font-weight: 900;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+footer #followers::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-bottom: -16px;
+    margin-top: 18px;
+}
+footer .follow-us>p{
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #cccccc;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: super;
+}
+footer .follow-us a{
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/ikons.png);
+    margin-left: 4px;
+}
+.subscribe_form {
+    max-width: 380px;
+    display: block;
+    border: 1px #e5e5e5 solid;
+    border-right: transparent;
+    margin-top: 31px;
+    background-color: #fff;
+}
+.subscribe_form:focus {
+    outline: none;
+}
+footer .form-control {
+    border: none;
+}
+footer .form-control:focus {
+    box-shadow: none;
+}
+footer input {
+    height: 40px;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: black;
+    font-style: italic;
+    padding-left: 13px;
+    background-color: #fff;
+}
+footer .subscribe_form button {
+      border: none;
+      float: right;
+      background-color: #95e1d3;
+      color: #fff;
+      border-radius: 0;
+      width: 135px;
+      font-size: 14px;
+      line-height: 41px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      transition: all ease 0.3s;
+      -webkit-transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+      -ms-transition: all ease 0.3s;
+}
+footer button:hover{
+        color: #fff;
+        background-color: rgba(14, 150, 133, 0.77);
+        outline: none;
+        transition: all ease 0.3s;
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        -ms-transition: all ease 0.3s;
+      }
+footer .footer-blog-item .footer-blog-img{
+    content: "";
+    display: inline-block;
+    width: 120px;
+    height: 80px;
+    background-image: url(../images/ikons.png);
+    padding-right: 136px;
+}
+.footer-item .footer-blog-item p{
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #cccccc;
+    font-style: italic;
+    vertical-align: super;
+} 
+footer #blog-text{
+    font-family: 'Montserrat', regular;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    line-height: 20px;
+    text-decoration: none;
+}
+footer #blog-text:hover{
+    color: rgb(77, 70, 70);
+    text-decoration: underline;
+}
+footer #instagram{
+    display: block;
+    margin-top: 31px;
+}
+footer .footer-item:nth-child(3)   a{
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/ikons.png);
+}
+footer .footer-item:nth-child(3) #footer_view{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 26px;
+}
+footer #copyrights::before{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-top: 68px;
+    margin-bottom: 24px;
+}
+footer #copyrights{
+    text-align: center;
+    font-family: 'Montserrat', regular;
+    font-size: 13px;
+}

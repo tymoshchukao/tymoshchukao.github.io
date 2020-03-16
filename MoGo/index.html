@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/dropblock.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/slider2.css">
+    <link rel="stylesheet" href="css/footer.css">
     <!-- <link url="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700,800&display=swap&subset=cyrillic-ext"> -->
 </head>
 
@@ -63,9 +64,9 @@
                 perferendis! Adipisci sunt obcaecati voluptas sit nisi ab officiis dolores nobis veritatis, sint
                 repellat at sapiente laborum.</p>
             <div class="about-us-photos">
-                <img src="images/photos-1.png">
-                <img src="images/photos-2.png">
-                <img src="images/photos-3.png">
+                <a class="gradient" href=""><img src="images/photos-1.png"></a>
+                <a class="gradient" href=""><img src="images/photos-2.png"></a>
+                <a class="gradient" href=""><img src="images/photos-3.png"></a>
             </div>
         </div>
     </div>
@@ -307,25 +308,54 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam voluptatum unde assumenda nemo
                 perferendis! Adipisci sunt obcaecati voluptas sit nisi ab officiis dolores nobis veritatis, sint
                 repellat at sapiente laborum.</p>
-            <div class="our-team-photo">
-                <img src="images/matthew.png" alt="">
-                <img src="images/christopher.png" alt="">
-                <img src="images/michael.png" alt="">
-            </div>
-            <div class="our-team-member">
-                <div>
-                    <p>Matthew Dix</p>
-                    <i>Graphic Design</i>
-                </div>
-                <div>
-                    <p>Christopher Campbell</p>
-                    <i>Branding/UX Design</i>
-                </div>
-                <div>
-                    <p>Michael Fertig</p>
-                    <i>Developer</i>
-                </div>
-            </div>
+            <ul class="grid cs-style-3">
+                <li>
+                    <figure>
+                        <img src="images/matthew.png" alt="">
+                        <figcaption>
+                            <p>Matthew Dix</p>
+                            <span><i>Graphic Design</i></span>
+                            <div>
+                                <button style="background-position: -145px -56px;"></button>
+                                <button style="background-position: -194px -56px;"></button>
+                                <button style="background-position: -239px -59px;"></button>
+                                <button style="background-position: -278px -58px;"></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/christopher.png" alt="">
+                        <figcaption>
+                            <p>Christopher Campbell</p>
+                            <span><i>Branding/UX Design</i></span>
+                            <div>
+                                <button style="background-position: -145px -56px;"></button>
+                                <button style="background-position: -194px -56px;"></button>
+                                <button style="background-position: -239px -59px;"></button>
+                                <button style="background-position: -278px -58px;"></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/michael.png" alt="">
+                        <figcaption>
+                            <p>Michael Fertig</p>
+                            <span><i>Developer</i></span>
+                            <div>
+                                <button style="background-position: -145px -56px;"></button>
+                                <button style="background-position: -194px -56px;"></button>
+                                <button style="background-position: -239px -59px;"></button>
+                                <button style="background-position: -278px -58px;"></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+
         </div>
     </div>
     <div class="brands">
@@ -470,32 +500,44 @@
             <h3>LATEST BLOG</h3>
             <div class="blog-wrapper">
                 <div class="blog-item">
-                    <img src="images/blog1.png" alt="">
+                    <img src="images/blog1.png" style="position: relative" alt="">
+                    <div id="sticker">
+                        <p id="data">15</p>
+                        <p id="jan">Jan</p>
+                    </div>
                     <br>
                     <p id="bold_text" style="line-height: 48px;">Lorem ipsum dolor sit amet</p>
                     <p id="light_text" style="padding: 0">Consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore
                         magna aliqua.</p>
-                        <br>
+                    <br>
                     <a href="">542</a>
                     <button>17</button>
                 </div>
                 <div class="blog-item">
-                    <img src="images/blog2.png" alt="">
+                    <img src="images/blog2.png" style="position: relative" alt="">
+                    <div id="sticker">
+                        <p id="data">14</p>
+                        <p id="jan">Jan</p>
+                    </div>
                     <p id="bold_text" style="line-height: 48px;">sed do eiusmod tempor</p>
                     <p id="light_text" style="padding: 0">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna
                         aliqua.</p>
-                        <br>
+                    <br>
                     <a href="">992</a>
                     <button>42</button>
                 </div>
                 <div class="blog-item">
-                    <img src="images/blog3.png" alt="">
+                    <img src="images/blog3.png" style="position: relative" alt="">
+                    <div id="sticker">
+                        <p id="data">12</p>
+                        <p id="jan">Jan</p>
+                    </div>
                     <p id="bold_text" style="line-height: 48px;">incididunt ut labore et dolore</p>
                     <p id="light_text" style="padding: 0">Elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.</p>
-                        <br>
+                    <br>
                     <a href="">1560</a>
                     <button>98</button>
                 </div>
@@ -504,11 +546,84 @@
     </div>
     <div class="map">
         <div class="container">
-                <h5>OPEN MAP</h5>
+            <h5>OPEN MAP</h5>
         </div>
     </div>
     <footer>
-        <div class="container"></div>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-item" style="max-width: 480px;">
+                    <div class="logo-footer">MoGo</div>
+                    <p id="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p id="followers"><span class="letter">15k</span>followers</p>
+                    <div class="follow-us" style="margin-top: 30px;">
+                        <p>Follow Us:</p>
+                        <a href="" style="background-position: -333px -466px;"></a>
+                        <a href="" style="background-position: -359px -466px;"></a>
+                        <a href="" style="background-position: -380px -465px;"></a>
+                        <a href="" style="background-position: -401px -465px;"></a>
+                        <a href="" style="background-position: -430px -467px;"></a>
+                        <a href="" style="background-position: -457px -467px;"></a>
+                        <a href="" style="background-position: -480px -467px;"></a>
+                        <a href="" style="background-position: -501px -466px;"></a>
+                    </div>
+                    <form class="subscribe_form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="email" placeholder="Your Email...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-item" style="max-width: 340px">
+                    <p id="bold_text">blogs</p>
+                    <div class="footer-blog-item" style="display: flex; margin-top: 31px;">
+                        <div class="footer-blog-img" style="background-position: -606px -502px;"></div>
+                        <div style="padding-top: 12px;">
+                            <a id="blog-text" href="">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing</a>
+                            <p>Jan 9, 2020</p>
+                        </div>
+                    </div>
+                    <div class="footer-blog-item" style="display: flex; margin-top: 31px;">
+                        <div class="footer-blog-img" style="background-position: -315px -500px;"></div>
+                        <div style="padding-top: 12px;">
+                            <a id="blog-text" href="">Consectetur adipiscing elit,
+                                sed do eiusmod tempor</a>
+                            <p>Jan 9, 2020</p>
+                        </div>
+                    </div>
+                    <div class="footer-blog-item" style="display: flex; margin-top: 31px;">
+                        <div class="footer-blog-img" style="background-position: -452px -500px;"></div>
+                        <div style="padding-top: 12px;">
+                            <a id="blog-text" href="">sed do eiusmod tempor
+                                incididunt ut labore</a>
+                            <p>Jan 9, 2020</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-item" style="max-width: 280px;">
+                    <p id="bold_text">instagram</p>
+                    <div id="instagram">
+                        <a href="" style="background-position: -556px -12px;"></a>
+                        <a href="" style="background-position: -659px -12px;"></a>
+                        <a href="" style="background-position: -556px -119px;"></a>
+                        <a href="" style="background-position: -665px -119px;"></a>
+                        <a href="" style="background-position: -556px -219px;"></a>
+                        <a href="" style="background-position: -665px -218px;"></a>
+                        <a href="" style="background-position: -615px -410px;"></a>
+                        <a href="" style="background-position: -556px -315px;"></a>
+                        <a href="" style="background-position: -665px -315px;"></a>
+                    </div>
+                    <p id="footer_view">View more photos</p>
+                </div>
+            </div>
+            <p id="copyrights">&copy; 2016 MoGo free PSD template by Laaqiq</p>
+        </div>
     </footer>
     <script src="js/slider.js"></script>
     <script src="js/slider2.js"></SCRipt>
